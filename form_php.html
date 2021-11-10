@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Strict//EN”  “http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd”>
+<html  xmlns=”http://www.w3.org/1999/xhtml” xml:lang=”en” lang=”en”>
+<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<title>Lailah</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="container">
+	<h1>Membership Form</h1>
+	<p>Thank you for choosing to join Grant and family club. To register, please enter your details below and click send details</p>
+
+	<form action="form_php.php" method="post">
+		<div style="width: 30em;">
+			
+			<label for="firstName">First name</label>
+			<input type="text" name="firstName" id="" value=""><br><br>
+
+			<label for="lastName">Last name</label>
+			<input type="text" name="lastName" id="" value=""><br><br>
+
+			<label for="password1">Choose a password</label>
+			<input type="password" name="password1" id="" value=""><br><br>
+
+			<label for="password2">Retype password</label>
+			<input type="password" name="password2" id="" value=""><br><br>
+
+			<label for="genderMale">Are you male....</label>
+			<input type="radio" name="gender" value="M">
+			<label for="genderFemale">....or female?</label>
+			<input type="radio" name="gender" id="" value="F"><br><br>
+
+			<label for="favoriteWidget">Whats is your favourite widget?</label>
+			<select name="favoriteWidget" id="" size="1">
+				<option value="superWidget">The Super Widget</option>
+				<option value="megaWidget">The Mega Widget</option>
+				<option value="wonderWidget">The Wonder Widget</option>
+			</select><br><br>
+
+			<label for="newsletter">Do you want to receive our newsletter ?</label>
+			<input type="checkbox" name="newsletter" id="" value="yes"><br><br>
+
+			<label for="comments">Any comments ?</label>
+			<textarea name="comments" id="" rows="4" cols="40"></textarea>
+			
+			<div style="clear: both;">
+				<input type="submit" name="submitButton" id="" value="Send Details">
+
+				<input type="reset" name="resetButton" id="" value="Reset Form" style="margin-right: 20px;">
+			</div>
+
+		</div>
+	</form>
+</div>
+
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

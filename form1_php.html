@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC “-//W3C//DTD XHTML 1.0 Strict//EN”  “http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd”>
+<html  xmlns=”http://www.w3.org/1999/xhtml” xml:lang=”en” lang=”en”>
+<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    	<title>Lailah</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap.css" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="container">
+	<h1>Membership form</h1>
+	<p>Thanks for choosing to join The Widget Club. To register, please fill in your details below and click Send Details</p>
+
+	<form action="form1_php.php" method="post">
+		<label for="firstName">First name</label>
+		<input type="text" name="firstName" id="" value=""><br><br>
+
+		<label for="lastName">Last name</label>
+		<input type="text" name="lastName" id="" value=""><br><br>
+
+		<label for="password1">Choose  a password</label>
+		<input type="password" name="password1" id="" value=""><br><br>
+
+		<label for="password2">Retype password</label>
+		<input type="password" name="password2" id="" value=""><br><br>
+
+		<label for="genderMale">Are you male...</label>
+		<input type="radio" name="gender" id="" value="M">
+		<label for="genderFemale">... or Female</label>
+		<input type="radio" name="gender" id="" value="F"><br><br>
+
+		<label for="favoriteWidgets">Wat are your favourite widgets ?</label>
+		<select name="favoriteWidgets[]" id="" size="3" multiple="multiple">
+			<option value="superWidget">The Superwidget</option>
+			<option value="MegaWidget">The Megawidget</option>
+			<option value="wonderWidget">The wonder widget</option>	
+		</select><br><br>
+
+		<label for="newsLetterWidgetTimes">Do you want to receive our widget newsletter ?</label>
+		<input type="checkbox" name="newsletter[]" id="" value="widgetTimes"><br><br>
+
+		<label for="newsLetterFunWidgetTimes">Do you want to receive 'Fun with widgets' newsletter</label>
+		<input type="checkbox" name="newsletter[]" id="" value="funWithWidget"><br><br>
+
+		<label for="comments">Any Comments ?</label>
+		<textarea name="comments" id="" rows="4" cols="50"></textarea>
+
+		<div style="clear: both;">
+			<input type="submit" name="submitButton" id="" value="Send Details">
+			<input type="reset" name="resetButton" id="" value="Reset Form" style="margin-right: 20px;">
+		</div>
+
+	</form>
+</div>
+
+<script src="js/bootstrap.js"></script>
+</body>
+</html>
